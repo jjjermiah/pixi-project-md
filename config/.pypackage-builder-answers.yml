@@ -1,0 +1,17 @@
+# Changes here will be overwritten by Copier
+_commit: v0.6.0
+_src_path: git@github.com:jjjermiah/PyPackageBuilder.git
+author_email: jermiahjoseph98@gmail.com
+author_full_name: Jermiah Joseph
+build_backend: hatch
+git_init: true
+github_username: jjjermiah
+package_description: 'TODO:: Add a short description of pixi_project_markdown here.'
+package_name: pixi_project_markdown
+pixi_install: true
+pixi_install_envs:
+- dev
+project_name: Pixi Project Markdown
+project_slug: pixi-project-md
+python_version: '3.10'
+software_license: MIT License
