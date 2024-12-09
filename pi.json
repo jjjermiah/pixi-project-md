@@ -1,0 +1,335 @@
+{
+  "platform": "osx-arm64",
+  "virtual_packages": [
+    "__unix=0=0",
+    "__osx=14.5=0",
+    "__archspec=1=m2"
+  ],
+  "version": "0.39.0",
+  "cache_dir": "/Users/bhklab/Library/Caches/rattler/cache",
+  "cache_size": null,
+  "auth_dir": "/Users/bhklab/.rattler/credentials.json",
+  "global_info": {
+    "bin_dir": "/Users/bhklab/.config/.pixi/bin",
+    "env_dir": "/Users/bhklab/.config/.pixi/envs",
+    "manifest": "/Users/bhklab/.config/.pixi/manifests/pixi-global.toml"
+  },
+  "project_info": {
+    "name": "pixi_project_markdown",
+    "manifest_path": "/Users/bhklab/dev/pixi-project-md/pixi.toml",
+    "last_updated": "08-12-2024 22:17:31",
+    "pixi_folder_size": null,
+    "version": null
+  },
+  "environments_info": [
+    {
+      "name": "default",
+      "features": [
+        "default"
+      ],
+      "solve_group": null,
+      "environment_size": null,
+      "dependencies": [
+        "python"
+      ],
+      "pypi_dependencies": [
+        "pixi_project_markdown"
+      ],
+      "platforms": [
+        "osx-arm64",
+        "osx-64",
+        "linux-64",
+        "win-64"
+      ],
+      "tasks": [],
+      "channels": [
+        "conda-forge"
+      ],
+      "prefix": "/Users/bhklab/dev/pixi-project-md/.pixi/envs/default"
+    },
+    {
+      "name": "dev",
+      "features": [
+        "dev",
+        "test",
+        "quality",
+        "docs",
+        "default"
+      ],
+      "solve_group": "default",
+      "environment_size": null,
+      "dependencies": [
+        "ipython",
+        "ipykernel",
+        "jupyterlab",
+        "pip",
+        "pytest",
+        "pytest-cov",
+        "pytest-xdist",
+        "ruff",
+        "mypy",
+        "mkdocs",
+        "python"
+      ],
+      "pypi_dependencies": [
+        "pydoctest",
+        "pixi_project_markdown"
+      ],
+      "platforms": [
+        "win-64",
+        "osx-64",
+        "linux-64",
+        "osx-arm64"
+      ],
+      "tasks": [
+        "doc-deploy",
+        "type-check",
+        "test",
+        "doc-serve",
+        "ruff-format",
+        "doc-build",
+        "coverage",
+        "qc",
+        "ruff-check"
+      ],
+      "channels": [
+        "conda-forge"
+      ],
+      "prefix": "/Users/bhklab/dev/pixi-project-md/.pixi/envs/dev"
+    },
+    {
+      "name": "quality",
+      "features": [
+        "quality",
+        "default"
+      ],
+      "solve_group": "default",
+      "environment_size": null,
+      "dependencies": [
+        "ruff",
+        "mypy",
+        "python"
+      ],
+      "pypi_dependencies": [
+        "pydoctest",
+        "pixi_project_markdown"
+      ],
+      "platforms": [
+        "win-64",
+        "linux-64",
+        "osx-arm64",
+        "osx-64"
+      ],
+      "tasks": [
+        "qc",
+        "ruff-format",
+        "type-check",
+        "ruff-check"
+      ],
+      "channels": [
+        "conda-forge"
+      ],
+      "prefix": "/Users/bhklab/dev/pixi-project-md/.pixi/envs/quality"
+    },
+    {
+      "name": "docs",
+      "features": [
+        "docs",
+        "default"
+      ],
+      "solve_group": "default",
+      "environment_size": null,
+      "dependencies": [
+        "mkdocs",
+        "python"
+      ],
+      "pypi_dependencies": [
+        "pixi_project_markdown"
+      ],
+      "platforms": [
+        "osx-64",
+        "win-64",
+        "osx-arm64",
+        "linux-64"
+      ],
+      "tasks": [
+        "doc-serve",
+        "doc-build",
+        "doc-deploy"
+      ],
+      "channels": [
+        "conda-forge"
+      ],
+      "prefix": "/Users/bhklab/dev/pixi-project-md/.pixi/envs/docs"
+    },
+    {
+      "name": "publish",
+      "features": [
+        "build",
+        "release",
+        "default"
+      ],
+      "solve_group": "default",
+      "environment_size": null,
+      "dependencies": [
+        "hatch",
+        "python-semantic-release",
+        "python"
+      ],
+      "pypi_dependencies": [
+        "pixi_project_markdown"
+      ],
+      "platforms": [
+        "linux-64",
+        "osx-arm64",
+        "osx-64",
+        "win-64"
+      ],
+      "tasks": [
+        "publish-test",
+        "publish-pypi",
+        "build",
+        "semver"
+      ],
+      "channels": [
+        "conda-forge"
+      ],
+      "prefix": "/Users/bhklab/dev/pixi-project-md/.pixi/envs/publish"
+    },
+    {
+      "name": "py310",
+      "features": [
+        "test",
+        "py310",
+        "default"
+      ],
+      "solve_group": null,
+      "environment_size": null,
+      "dependencies": [
+        "pytest",
+        "pytest-cov",
+        "pytest-xdist",
+        "python"
+      ],
+      "pypi_dependencies": [
+        "pixi_project_markdown"
+      ],
+      "platforms": [
+        "linux-64",
+        "win-64",
+        "osx-64",
+        "osx-arm64"
+      ],
+      "tasks": [
+        "test",
+        "coverage"
+      ],
+      "channels": [
+        "conda-forge"
+      ],
+      "prefix": "/Users/bhklab/dev/pixi-project-md/.pixi/envs/py310"
+    },
+    {
+      "name": "py311",
+      "features": [
+        "test",
+        "py311",
+        "default"
+      ],
+      "solve_group": null,
+      "environment_size": null,
+      "dependencies": [
+        "pytest",
+        "pytest-cov",
+        "pytest-xdist",
+        "python"
+      ],
+      "pypi_dependencies": [
+        "pixi_project_markdown"
+      ],
+      "platforms": [
+        "osx-arm64",
+        "linux-64",
+        "win-64",
+        "osx-64"
+      ],
+      "tasks": [
+        "coverage",
+        "test"
+      ],
+      "channels": [
+        "conda-forge"
+      ],
+      "prefix": "/Users/bhklab/dev/pixi-project-md/.pixi/envs/py311"
+    },
+    {
+      "name": "py312",
+      "features": [
+        "test",
+        "py312",
+        "default"
+      ],
+      "solve_group": null,
+      "environment_size": null,
+      "dependencies": [
+        "pytest",
+        "pytest-cov",
+        "pytest-xdist",
+        "python"
+      ],
+      "pypi_dependencies": [
+        "pixi_project_markdown"
+      ],
+      "platforms": [
+        "win-64",
+        "osx-arm64",
+        "linux-64",
+        "osx-64"
+      ],
+      "tasks": [
+        "coverage",
+        "test"
+      ],
+      "channels": [
+        "conda-forge"
+      ],
+      "prefix": "/Users/bhklab/dev/pixi-project-md/.pixi/envs/py312"
+    },
+    {
+      "name": "py313",
+      "features": [
+        "test",
+        "py313",
+        "default"
+      ],
+      "solve_group": null,
+      "environment_size": null,
+      "dependencies": [
+        "pytest",
+        "pytest-cov",
+        "pytest-xdist",
+        "python"
+      ],
+      "pypi_dependencies": [
+        "pixi_project_markdown"
+      ],
+      "platforms": [
+        "win-64",
+        "osx-arm64",
+        "osx-64",
+        "linux-64"
+      ],
+      "tasks": [
+        "coverage",
+        "test"
+      ],
+      "channels": [
+        "conda-forge"
+      ],
+      "prefix": "/Users/bhklab/dev/pixi-project-md/.pixi/envs/py313"
+    }
+  ],
+  "config_locations": [
+    "/Users/bhklab/.config/.pixi/config.toml"
+  ]
+}

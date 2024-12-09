@@ -27,6 +27,8 @@ classifiers = [
 requires-python = ">= 3.10"
 dependencies = [
   "rich",
+  "pydantic-settings",
+  "click",
 ]
 
 [project.urls]
@@ -42,3 +44,5 @@ build-backend = "hatchling.build"
 
 [project.scripts]
 myscript = "pixi_project_markdown.main:main"
+
+#--------------------------------------------------------------------------------------------------#
